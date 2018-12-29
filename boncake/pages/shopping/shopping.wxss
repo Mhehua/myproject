@@ -1,0 +1,60 @@
+ /* pages/shopping/shopping.wxss 
+
+/*图片大小*/
+ .cart-thumb{
+  width:100px;
+  height:100px;
+  float:left;
+  margin-top:-63px;
+  margin-left:40px
+} 
+/*打勾的图标*/
+.icon{
+  margin-top:35px;
+  margin-left:10px;
+}
+/*标题跟价格样式*/
+.title{
+font-size:14px;
+color:8px;
+width:236px;
+height:30px;
+margin-top:-42px;
+margin-left:160px;  
+} 
+/*标题下的价格*/
+.title>text:nth-child(2){
+  margin-left:100px;
+}
+/*整个框的样式*/
+ .cont_box{
+  width:100%;
+  height:100px;
+ 
+  position:relative;
+} 
+.cart{
+  margin-top:10px;
+}
+/*数量跟+-的样式*/
+.cart>text{
+  margin-left:10px; 
+}
+/*X的样式*/
+ .del{ 
+  float:right;
+  margin-right:10px;
+} 
+/*底部全选的样式*/
+.check{
+  width:100%;
+  height:40px;
+  padding-top:10px;
+  position:fixed;
+  top:503px;
+  left:0px;
+}
+.check>icon{
+  vertical-align: middle;
+  
+}

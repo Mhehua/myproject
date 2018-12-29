@@ -1,0 +1,26 @@
+<!--pages/profile/profile.wxml-->
+<view>
+  <!--1：头像-->
+  <view class="avatar">
+      <image src="{{isPlayingMusic?'http://127.0.0.1:3000/img/music-stop.png':'http://127.0.0.1:3000/img/music-start.png'}}" lazy-load='true' mode="aspectFill" bindtap="onMusicTap"></image>
+  </view> 
+  <view class="divider"></view>
+  <!--2：个人列表-->
+  <view class="cell">
+      <view class="cell-item">个人资料</view>
+      <view class="cell-item arrow">我的优惠卷</view>
+  </view>
+  <view class="divider"></view>
+   <!--3：服务条款-->
+   <view class="cell">
+      <view class="cell-item arrow">常见问题</view>
+      <view class="cell-item arrow">使用条款</view>
+      <view class="cell-item arrow">常见问题</view>
+      <view class="cell-item arrow">使用条款</view>
+   </view>
+  <!--4：设置-->
+  <view class="divider"></view>
+  <view class="cell">
+      <view class="cell-item arrow">设置</view>
+  </view>
+</view>

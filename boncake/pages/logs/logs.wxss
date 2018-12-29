@@ -1,0 +1,42 @@
+/* .slider{
+  margin-top:15rpx;
+} 
+.slider swiper,.slider image{
+  width:100%;
+  height:306px;
+} */
+/*3宫格*/
+.index-nav{
+  display:flex;
+  flex-wrap:wrap;
+}
+.nav-item{
+  width:50%;
+  height:420rpx;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-top:20px; 
+}
+ 
+.nav-item image{
+  width:168px;
+  height:168px;
+}
+
+.price-section{
+  font-size: 30rpx;
+  margin-top: -20px;
+  color: #c19138;
+}
+
+.nav-item .ell{
+  width: 50%;
+  height: 40px;
+  overflow: hidden;/*超出隐藏*/
+  white-space:nowrap;/*不允许换行*/
+  text-overflow:ellipsis;/*超出部分添加...*/
+}

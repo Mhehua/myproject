@@ -1,0 +1,126 @@
+/*下拉导航条隐藏*/
+::-webkit-scrollbar{
+display:none !important;
+}
+
+.border{
+   border-top:1rpx solid #ccc;
+} 
+/*今日特惠*/
+.start-before{
+  color:#f19e38;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  line-height:2;
+}
+.start{
+  margin-left:60rpx;
+  margin-top:20rpx;
+}
+.start-after{
+  font-size: 30rpx;
+  color:#000;
+}
+.shop-address{
+  font-size:28rpx;
+  color:#666;
+}
+.shop-star{
+  width:700rpx;
+  height:350rpx;
+  border:1rpx solid red;
+}
+/*时间*/
+.countDownTimeView{
+  color:#333;
+  font-size:30rpx;
+}
+/*优惠价*/
+.pirec{
+  color:red;
+  font-size: 28rpx;
+}
+/*原价价格*/
+.s{
+  text-decoration:line-through;
+  font-size: 24rpx;
+  margin-left:10rpx;
+}
+/*5:店铺名称*/
+.shop-title{
+  font-size: 18px;
+  color:#333;
+  width:380rpx;
+}
+/*优惠价格的图片*/
+ .shop-img{
+   position:relative;
+ }
+ .shop-img>image{
+  width:240rpx;
+  height:240rpx;
+  position:absolute;
+  top:-260rpx;
+  right:80rpx;
+ 
+} 
+/*TO 热卖榜单*/
+.jf{
+  width:100%;
+  height:1000rpx;
+}
+.jf>text{
+  margin-left:280rpx;
+  font-size: 30rpx;
+}
+.jf>image{
+  width:100%;
+  height:208px;
+  margin-top:20rpx;
+}
+/*3宫格*/
+.index-nav{
+ white-space: nowrap;
+
+}
+.nav-item{
+  width: 298rpx;
+  height:320rpx;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+}
+
+ .nav-item:nth-child(3n){
+  border-right:0 none;
+} 
+.nav-item image{
+  width:120px;
+  height:120px;
+
+}
+/**/
+.title_color{
+  font-size: 25rpx;
+  color: #696969;
+}
+.price-section{
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  color: #c19138;
+}
+/*全部蛋糕*/
+.btn{
+  width:100%;
+  height:80rpx;
+  margin-top:10px; 
+}
+.btn>button{
+  font-size:14px;
+  background: #ffffff;
+  
+}
+/*功能四：按钮*/

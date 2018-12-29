@@ -1,0 +1,55 @@
+    <!--index.wxml-->
+<view class="app-container">
+<!--轮播图-->
+<view class='slider'>
+  <swiper autoplay indicator-dots indicator-active-color="#D3B145">
+      <swiper-item wx:for="{{list}}" wx:key="id">
+          <image src="{{item.img_url}}"  mode="aspectFill"></image> 
+          <view>{{item.img_url}}</view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='info'>
+    <view class="start">
+      <view class='start-after'>
+        <text class='start-before'>★  </text>
+        <text>今日特惠</text>
+      </view>
+      <view class="shop-address">距结束还有</view>
+    <!--倒计时  -->
+      <view class="countDownTimeView countDownAllView" >
+        <text class="voteText countDownTimeText">{{countDownHour}} ：</text>
+        <text class="voteText countDownTimeText">{{countDownMinute}} ：</text>
+        <text class="voteText countDownTimeText">{{countDownSecond}}</text>
+      </view>
+      <view>
+        <text class="pirec">￥278/6寸</text>
+        <text class="s">原价￥318</text>
+      </view>
+      <view class="shop-img">
+        <image src="http://127.0.0.1:3000/img/77.jpg"></image>
+      </view>
+    </view>
+  </view>
+    <!--分隔线-->
+    <view class="divider"></view>
+    <!--to 热卖榜单-->
+    <view class="jf" wx:for="{{navlist}}" wx:key="id">
+      <text>{{item.title}}</text>
+      <image src="{{item.img_url}}"></image>
+      <!--九宫格-->  
+      <scroll-view class="index-nav" scroll-x="true" >
+        <view class="nav-item " wx:for="{{item.NavList}}" wx:key="index"  >
+          <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap="handleJump" data-id="{{item.NavList.id}}"></image>
+          <view class="title_color">{{item.title}}</view>
+          <view class='price-section'>￥{{item.price}}/{{item.pound}}磅</view>
+        </view>
+      </scroll-view>
+        <view class='btn' catchtap='handle1'>
+         <button data-pid="{{item.pid}}">
+            全部蛋糕
+            <text class="start-before">▷</text>
+         </button>      
+      </view>  
+  </view>
+</view>

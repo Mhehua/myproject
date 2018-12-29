@@ -1,0 +1,18 @@
+<!--logs.wxml-->
+<view class='slider'>
+  <swiper autoplay>
+      <swiper-item wx:for="{{list}}" wx:key="id">
+          <image src="{{item.img_url}}" mode="aspectFill" autoplay></image> 
+          <view>{{item.img_url}}</view>
+      </swiper-item>
+    </swiper>
+    
+    <!--2宫格-->
+    <view class="index-nav" scroll-x="true">
+        <view class="nav-item" wx:for="{{navlist}}" wx:key="index">
+          <image src="{{item.img_url}}" lazy-load mode="aspectFill" bindtap="handleJump" data-id="{{item.id}}"></image>
+          <text class='ell'>{{item.title}}</text>
+          <text class='price-section'>￥{{item.price}}/{{item.pound}}磅</text>
+        </view>
+    </view>
+  </view>
